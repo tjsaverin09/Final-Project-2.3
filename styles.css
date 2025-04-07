@@ -469,6 +469,7 @@ PRICING
     z-index: 100;
 }
 .plan {
+    width: 100%;
     width: calc(100% / 3);
     max-width: 384px;
     margin: 64px 32px 0 0;
@@ -1035,5 +1036,111 @@ TABLETS
 */
 
 @media (max-width: 768px) {
-    
+    .footer__columns {
+        justify-content: flex-start;
+    }
+
+    .footer__column {
+        width: calc(100% / 3);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__copyright, 
+    .footer__social--links {
+        margin-top: 32px;
+    }
+
+    .footer__socials {
+        margin-left: 0px;
+    }
+
+    .footer__social--link:first-child {
+        margin-left: 0px;
+    }
+
+    .footer__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*
+
+MOBILE PHONES
+
+*/
+
+@media (max-width: 640px) {
+    .nav__logo {
+        margin: 8px 0;
+        padding-bottom: 4px;
+    }
+
+    .container {
+        padding: 80px 0;
+    }
+
+    .header__email {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .header__input--email {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__btn--email {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+    .header__customer--para {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+
+    main {
+        margin-bottom: 80px;
+    }
+
+    .container {
+        padding: 80px 0;
+    }
+
+    #features .section__title,
+    #pricing .section__title {
+        font-size: 36px;
+    }
+
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .feature__title {
+        letter-spacing: 0.025em;
+        line-height: 1;
+    }
+
+    .feature__para {
+        margin-top: 4px;
+        line-height: 2;
+    }
 }
