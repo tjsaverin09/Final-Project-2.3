@@ -27,6 +27,10 @@
     flex-direction: column;
 }
 
+header {
+    position: relative;
+}
+
 a {
     display: inline;
     text-decoration: none;
@@ -102,11 +106,78 @@ button {
 .btn__menu {
     display: none; 
     background: transparent;
-    border: none;
-    transition: all 300ms ease;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    transition: 300ms;
+}
+
+.modal {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 378px;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(300%);
+    margin: 24px 16px;
+    padding: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 231, 235);
+    border-image: initial;
+    border-radius: 8px;
+    transition: 300ms;
+}
+
+.menu--open .modal {
+    display: flex;
+}
+
+.modal__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__link {
+    color: rgb(26, 32, 44);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 4px;
+    margin: 8px 0px;
+    border-bottom: 2px solid transparent;
+}
+
+.modal__link--primary {
+    color: rgb(247, 250, 252);
+    padding: 12px 32px;
+    background: rgb(100, 21, 255);
+    border-radius: 500px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 18px;
+    top: 24px;
 }
 
 .fa-bars {
+    font-size: 24px;
+}
+
+.fa-xmark {
     font-size: 24px;
 }
 
@@ -185,10 +256,6 @@ NAV
     transition: all 300ms;
 }
 
-
-.menu__backdrop {
-    position: absolute;
-}
 
 
 /*
