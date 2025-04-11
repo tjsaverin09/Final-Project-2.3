@@ -1437,4 +1437,32 @@ MOBILE PHONES
     .start__button:nth-child(2) {
         margin-top: 16px;
     }
+
+    .footer__columns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__column {
+        width: auto;
+        padding: 0 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer__column:nth-child(5) {
+        margin-top: 32px;
+    }
+}
+
+/*
+
+SMALL MOBILE PHONES
+
+*/
+
+@media (max-width: 444px) {
+    .footer__column:nth-child(4) {
+        margin-top: 32px;
+    }
 }
